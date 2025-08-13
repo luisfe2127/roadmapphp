@@ -39,5 +39,13 @@
     $calc = new calculadora();
     $resultado = $calc->somar(10, 20);
     echo "Resultado da soma: " . $resultado . "</br></br>";
+
+    $anon = "Claudiolfino";
+
+   $result = static function () use ($anon) {
+    echo "Bom dia " . $anon;
+   };
+
+    echo $result();
      
 ?>
