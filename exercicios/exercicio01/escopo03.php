@@ -40,12 +40,26 @@
     $resultado = $calc->somar(10, 20);
     echo "Resultado da soma: " . $resultado . "</br></br>";
 
-    $anon = "Claudiolfino";
+    $anon = "Claudiolfino" . "<br><br>";
 
    $result = static function () use ($anon) {
     echo "Bom dia " . $anon;
    };
 
     echo $result();
+
+    function examplefunction($input) {
+        $result = (static function () use ($input) {
+            static $counter = 0;
+            $counter++;
+
+            return "input: $input, counter: $counter" . "<br>";
+
+        });
+        return $result();
+    }
+
+    echo examplefunction('A');
+    echo examplefunction('B');
      
 ?>

@@ -32,4 +32,18 @@ class foo {
 var_dump(foo::counter());
 var_dump(foo::counter());
 
+function foo(){
+    static $int = 0;          // correct 
+    static $int = 1+2;        // correct
+    //static $int = sqrt(121);  // correct as of PHP 8.3.0
+
+    $int++;
+    echo $int;
+}
+
+echo foo() . "</br>";
+echo foo() . "</br>";
+echo foo() . "</br>";
+
 ?>
+
