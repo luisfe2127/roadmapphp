@@ -61,5 +61,21 @@
 
     echo examplefunction('A');
     echo examplefunction('B');
+
+    function ad() {
+        static $v = 0;
+        $v++;
+
+        echo $v . "<br>";
+
+        if ($v < 10) {
+            ad();
+        };
+
+        $v--;
+    };
+
+    ad();
+    ad();
      
 ?>
