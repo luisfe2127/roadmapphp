@@ -19,5 +19,13 @@ $arrayCar = [
     $scotter = ["Honda", "Biz", "Yamaha", "Dafra", $modelSco = [2020, 2021, 2022]]
 ];
 
-echo($car[2], $modelCar[1]);
+print_r("\n". "\n" . $car[2]. " " . $modelCar[1]. "\n". "\n");
+
+function arrayFuntion() {
+    $name = ["Ana", "Maria", "João", "Pedro"];
+    return $name;
+};
+
+$array04 = arrayFuntion()[2];
+print_r($array04);
 ?>
