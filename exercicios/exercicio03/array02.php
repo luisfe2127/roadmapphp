@@ -14,6 +14,8 @@ $array01 = array_values($array01);
 $array01[] = 7;
 print_r($array01);
 
+//Example #11 Array Destructuring
+
 $source_array = ['foo', 'bar', 'baz'];
 
 [$foo, $bar, $baz] = $source_array;
@@ -21,6 +23,8 @@ $source_array = ['foo', 'bar', 'baz'];
 echo $foo, PHP_EOL;    // prints "foo"
 echo $bar, PHP_EOL;    // prints "bar"
 echo $baz, PHP_EOL;    // prints "baz"
+
+//Example #12 Array Destructuring in Foreach
 
 $source_array02 = [
     [1, 'Tom'],
