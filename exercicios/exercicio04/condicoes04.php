@@ -1,4 +1,5 @@
 <?php 
+//Nullsafe operator ( ?-> ) e Null coalescing operator ( ?? )
 class People {
     public function __construct(
         private string $name,
