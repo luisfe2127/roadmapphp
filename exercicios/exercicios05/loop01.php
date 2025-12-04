@@ -52,4 +52,11 @@ foreach ((new Veiculos())->carro as $marca => $detalhes) {
         echo " - Modelo: " . $modelo['nome'] . " Ano: " . $modelo['ano'] . "</br>";
     }
 }
+
+foreach ((new Veiculos())->moto as $marca => $detalhes) {
+    echo "Marca: " . $marca . "</br>";
+    foreach ($detalhes['modelos'] as $modelo) {
+        echo " - Modelo: " . $modelo['nome'] . " Ano: " . $modelo['ano'] . "</br>";
+    }
+}
 ?>
